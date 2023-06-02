@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'geo-bold';
+  src: url('fontes/geologica-bold.ttf') format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'geo-normal';
+  src: url('fontes/geologica-regular.ttf') format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Configurações Gerais */
+
+* {
+  font-family: 'geo-normal';
+  margin: 0;
+  padding: 0;
+}
+
+#div-html {
+  max-width: 1300px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 15px;
+  text-align: center;
+}
+
+/* Conteúdo*/
+
+.brasil {
+  display: block;
+  border-radius: 5px;
+  margin: auto;
+  width: 60%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15px auto;
+  width: 90%;
+}
+
+caption {
+  font-weight: bold;
+  padding: 2px;
+}
+
+thead {
+  background: #100;
+  color: white;
+}
+
+tbody {
+  background: lightgreen;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  width: 27px;
+  padding: 10px;
+  font-size: 2.4vh;
+}
+
+.siglas-table {
+  display: flex;
+  color: #999999;
+  font-size: 2vh;
+  padding: 8px;
+  justify-content: space-around;
+}
+
+.jogos {
+  margin: 20px 5px;
+  background: #FAFAFA;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.jogos p {
+  color: #373737;
+  text-indent: 20px;
+}
+
+.jogos + .jogos {
+  margin: 50px 5px;
+}
+
+.div-jogo-final {
+  display: flex;
+  justify-content: space-between;
+  font-size: 5vh;
+}
+
+@media (min-width: 2500px) {
+  .div-jogo-final {
+    font-size: 5em;
+  }
+}
+
+.jogo-final {
+  width: 15%;
+  border-radius: 5px;
+}
+
+span.gols-final {
+  display: block;
+  text-align: right;
+  padding: 6px 0;
+}
+
+.div-selecao {
+  background: linear-gradient(to top, darkgreen, green);
+  color: white;
+  padding: 16px;
+}
+
+.selecao-brasileira {
+  border-radius: 10px;
+  width: 100%;
+}
+
+article {
+  background: white;
+  padding: 20px;
+}
+
+article img {
+  height: 100px;
+}
+
+article ul {
+  color: #373737; 
+  padding: 5px;
+  list-style: none;
+}
+
+.brasil-campeao {
+  display: block;
+  margin: 200px auto 0;
+  height: 60%;
+  max-width: 100%;
+}
+
+footer {
+  background: black;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  color: white;
+}
